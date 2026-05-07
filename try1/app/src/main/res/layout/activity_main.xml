@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="15dp"
+        android:text="Username :"
+        android:layout_marginLeft="10dp"
+
+
+        />
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/username"
+        android:autofillHints="@string/username"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="15dp"
+        android:text="Password :"
+        android:layout_marginLeft="10dp"
+
+        />
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/password"
+        android:autofillHints="@string/password"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="15dp"
+        android:text="Confirm Password :"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/confirmpassword"
+        android:autofillHints="@string/confirmpassword"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="15dp"
+        android:text="Fullname :"
+        android:layout_marginLeft="10dp"
+
+
+        />
+    <EditText
+        android:id="@+id/editTextFullname"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/fullname"
+        android:autofillHints="@string/fullname"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/register"
+        android:layout_marginTop="50dp"
+
+        />
+
+
+</LinearLayout>

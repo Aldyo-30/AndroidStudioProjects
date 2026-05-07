@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">try1</string>
+    <string name="developer">Aldyo</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="confirmpassword">confirm password</string>
+    <string name="fullname">fullname</string>
+    <string name="register">register</string>
+    <string name="login">"Login"</string>
+</resources>
