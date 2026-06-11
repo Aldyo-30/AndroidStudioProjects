@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">EduDashboard</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_account">Account</string>
+    <string name="edu_dashboard">EduDashboard</string>
+    <string name="btn_id">EN</string>
+    <string name="course_summary_title">Course Material Summary:</string>
+    <string name="course_summary_content">- Layout &amp; View (ConstraintLayout)\n- ViewBinding Interaction\n- Intent (Explicit &amp; Implicit)\n- Fragment Lifecycle</string>
+    <string name="btn_open_docs">OPEN DOCUMENTATION</string>
+
+    <!-- Account Fragment -->
+    <string name="label_name">Student Name</string>
+    <string name="hint_name">Enter Name</string>
+    <string name="label_nim">NIM</string>
+    <string name="hint_nim">Enter NIM</string>
+    <string name="label_gpa">Target GPA (0.00 - 4.00)</string>
+    <string name="hint_gpa">Example: 3.75</string>
+    <string name="btn_save_profile">SAVE PROFILE</string>
+
+    <!-- Validation Messages -->
+    <string name="error_empty">This field cannot be empty</string>
+    <string name="error_invalid_gpa">GPA must be between 0.00 and 4.00</string>
+    <string name="error_no_browser">No browser application found</string>
+
+    <!-- Detail Account Activity -->
+    <string name="btn_back_account">← Account Summary</string>
+    <string name="title_detail_account">Account Summary</string>
+    <string name="success_save">Data Saved Successfully!</string>
+    <string name="display_name">Name : %1$s</string>
+    <string name="display_nim">NIM : %1$s</string>
+    <string name="display_gpa">Target GPA This Semester: %1$s</string>
+</resources>

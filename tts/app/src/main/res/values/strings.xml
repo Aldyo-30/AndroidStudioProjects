@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">EduDashboard</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_account">Akun</string>
+    <string name="edu_dashboard">EduDashboard</string>
+    <string name="btn_id">ID</string>
+    <string name="course_summary_title">Ringkasan Materi Kuliah:</string>
+    <string name="course_summary_content">- Layout &amp; View (ConstraintLayout)\n- ViewBinding Interaction\n- Intent (Explicit &amp; Implicit)\n- Fragment Lifecycle</string>
+    <string name="btn_open_docs">BUKA DOKUMENTASI</string>
+
+    <!-- Account Fragment -->
+    <string name="label_name">Nama Mahasiswa</string>
+    <string name="hint_name">Masukkan Nama</string>
+    <string name="label_nim">NIM</string>
+    <string name="hint_nim">Masukkan NIM</string>
+    <string name="label_gpa">IPK Target (0.00 - 4.00)</string>
+    <string name="hint_gpa">Contoh: 3.75</string>
+    <string name="btn_save_profile">SIMPAN PROFIL</string>
+
+    <!-- Validation Messages -->
+    <string name="error_empty">Field ini tidak boleh kosong</string>
+    <string name="error_invalid_gpa">IPK harus antara 0.00 dan 4.00</string>
+    <string name="error_no_browser">Tidak ada aplikasi browser ditemukan</string>
+
+    <!-- Detail Account Activity -->
+    <string name="btn_back_account">← Ringkasan Akun</string>
+    <string name="title_detail_account">Ringkasan Akun</string>
+    <string name="success_save">Data Berhasil Disimpan!</string>
+    <string name="display_name">Nama : %1$s</string>
+    <string name="display_nim">NIM : %1$s</string>
+    <string name="display_gpa">Target IPK Semester Ini: %1$s</string>
+</resources>
