@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "877545300299",
+    "firebase_url": "https://tugasfirebasemaps-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tugasfirebasemaps",
+    "storage_bucket": "tugasfirebasemaps.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877545300299:android:76fb45842a4d24674248ce",
+        "android_client_info": {
+          "package_name": "com.example.tugasfirebasegooglemaps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoI1dkQR9vPQQjh05hMTER4iwbk_VmN0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
