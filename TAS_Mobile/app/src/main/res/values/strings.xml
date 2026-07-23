@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TAS_Mobile</string>
+    <string-array name="filter_options">
+        <item>Semua</item>
+        <item>Wisata Resmi</item>
+        <item>Spot Warga</item>
+    </string-array>
+    <string-array name="categories">
+        <item>KULINER</item>
+        <item>FOTOGRAFI</item>
+        <item>TAMAN / ALAM</item>
+    </string-array>
+</resources>

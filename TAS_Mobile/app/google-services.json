@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "653476821015",
+    "project_id": "tas-mobile-fbca2",
+    "storage_bucket": "tas-mobile-fbca2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653476821015:android:1bcb2f5ae32db3ff988452",
+        "android_client_info": {
+          "package_name": "com.example.tas_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6lfTmimBcQZ4p1D9QEjhsA5pi8UTGyWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
