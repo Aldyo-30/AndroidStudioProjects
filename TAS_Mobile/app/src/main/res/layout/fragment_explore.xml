@@ -16,20 +16,36 @@
             android:layout_height="match_parent" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/filter_container"
-            android:layout_width="wrap_content"
+            android:id="@+id/header_container"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <Spinner
-                android:id="@+id/spinner_filter"
-                android:layout_width="150dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp" />
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/title_map"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="120dp" />
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -68,39 +84,17 @@
                 android:layout_marginBottom="16dp"
                 android:background="#DDDDDD" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tv_badge"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:id="@+id/tv_badge"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#BBDEFB"
-                    android:paddingHorizontal="8dp"
-                    android:paddingVertical="4dp"
-                    android:text="WISATA RESMI"
-                    android:textColor="#1976D2"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-                <Space
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <ImageView
-                    android:id="@+id/btn_bookmark_icon"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:src="@android:drawable/btn_star_big_off"
-                    android:padding="4dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:background="?attr/selectableItemBackgroundBorderless"/>
-            </LinearLayout>
+                android:background="#BBDEFB"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:text="WISATA RESMI"
+                android:textColor="#1976D2"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_spot_name"
@@ -117,42 +111,60 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Jl. Raya Kopeng, Getasan"
+                android:text="Alamat : Jl. Raya Kopeng, Getasan"
                 android:textColor="#555555" />
+
+            <TextView
+                android:id="@+id/tv_spot_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Rating : ★ 4.6"
+                android:textColor="#FBC02D"
+                android:textStyle="bold"
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tv_spot_rating"
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/btn_view_detail"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="★ 4.6"
-                    android:textColor="#FBC02D"
-                    android:textStyle="bold"
-                    android:textSize="16sp" />
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/btn_view_detail"
+                    android:textAllCaps="false" />
 
-                <Space
-                    android:layout_width="16dp"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/tv_spot_category_label"
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/btn_save_favorite"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background="#F5F5F5"
-                    android:paddingHorizontal="12dp"
-                    android:paddingVertical="4dp"
-                    android:text="ALAM"
-                    android:textColor="#333333"
-                    android:textSize="12sp" />
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/btn_save_favorite"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/btn_star_big_off" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_spot_category_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btn_bookmark_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

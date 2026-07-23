@@ -10,4 +10,9 @@
         <item>FOTOGRAFI</item>
         <item>TAMAN / ALAM</item>
     </string-array>
+    <string name="title_map">Peta Wisata Salatiga</string>
+    <string name="label_address">Alamat : %s</string>
+    <string name="label_rating">Rating : ★ %s</string>
+    <string name="btn_view_detail">Lihat Detail</string>
+    <string name="btn_save_favorite">Simpan Favorit</string>
 </resources>

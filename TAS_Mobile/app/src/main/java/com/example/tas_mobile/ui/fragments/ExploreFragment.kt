@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
@@ -177,9 +178,8 @@ class ExploreFragment : Fragment(), OnMapReadyCallback {
     private fun showSpotDetail(spot: TouristSpot) {
         val view = requireView()
         view.findViewById<TextView>(R.id.tv_spot_name).text = spot.nama
-        view.findViewById<TextView>(R.id.tv_spot_address).text = spot.alamat
-        view.findViewById<TextView>(R.id.tv_spot_rating).text = "★ ${spot.rating}"
-        view.findViewById<TextView>(R.id.tv_spot_category_label).text = spot.kategori
+        view.findViewById<TextView>(R.id.tv_spot_address).text = getString(R.string.label_address, spot.alamat)
+        view.findViewById<TextView>(R.id.tv_spot_rating).text = getString(R.string.label_rating, spot.rating.toString())
         
         val badge = view.findViewById<TextView>(R.id.tv_badge)
         if (spot.isOfficial) {
@@ -192,7 +192,11 @@ class ExploreFragment : Fragment(), OnMapReadyCallback {
             badge.setTextColor(Color.parseColor("#388E3C"))
         }
 
-        view.findViewById<View>(R.id.btn_bookmark_icon).setOnClickListener {
+        view.findViewById<Button>(R.id.btn_view_detail).setOnClickListener {
+            Toast.makeText(context, "Membuka detail ${spot.nama}", Toast.LENGTH_SHORT).show()
+        }
+
+        view.findViewById<Button>(R.id.btn_save_favorite).setOnClickListener {
             checkAndSaveToBookmark(spot)
         }
 

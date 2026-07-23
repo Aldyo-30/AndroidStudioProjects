@@ -1,0 +1,7 @@
+- [x] Update `fragment_explore.xml` layout
+    - [x] Add header bar with title and filter
+    - [x] Update bottom sheet with new structure and buttons
+- [x] Update `ExploreFragment.kt` logic
+    - [x] Bind new header UI elements
+    - [x] Handle "Lihat Detail" and "Simpan Favorit" button clicks
+- [ ] Verify changes on device/emulator
